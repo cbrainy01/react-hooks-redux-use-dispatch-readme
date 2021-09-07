@@ -17,4 +17,13 @@ function counterReducer(state = initialState, action) {
   }
 }
 
+function incrementCount() {
+  return { type: "count/increment" };
+}
+
+// Action Creators
+export function incrementCount() {
+  return { type: "count/increment" };
+}
+
 export default counterReducer;
